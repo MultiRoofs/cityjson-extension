@@ -1,0 +1,31 @@
+{
+  "type": "CityJSONExtension",
+  "name": "multiroofs",
+  "uri": "https://multiroofs.be/myextension.json",
+  "version": "0.1.0",
+  "versionCityJSON": "2.0",
+  "description": "Attributes needed for the MultiRoofs project",
+  "extraAttributes": {
+    "Building": {
+      "+roof_area": {
+        "type": "number"
+      },
+      "+roof_elevation": {
+        "type": "number"
+      },
+      "+building_volume": {
+        "type": "number"
+      },
+      "+building_type": {
+        "type": "string",
+        "enum": ["Residential", "Apartement"]
+      },
+      "+year_construction": {
+        "type": "integer"
+      }
+    }
+  },
+  "extraRootProperties": {},
+  "extraSemanticSurfaces": {},
+  "extraCityObjects": {}
+}
