@@ -1,6 +1,11 @@
 {
   "type": "CityJSON",
   "version": "2.0",
+  "extensions": {
+    "multiroofs": {
+      "url": "https://raw.githubusercontent.com/MultiRoofs/cityjson-extension/refs/heads/main/multiroofs.ext.json"
+    }
+  },
   "CityObjects": {
     "41": {
       "type": "Building",
