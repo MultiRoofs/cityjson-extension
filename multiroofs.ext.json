@@ -7,31 +7,81 @@
   "description": "Attributes needed for the MultiRoofs project",
   "extraAttributes": {
     "Building": {
-      "+building_function": {
+      "+building-function": {
         "type": "string"
       },
-      "+building_type": {
+      "+building-type": {
         "type": "string",
-        "enum": ["Residential", "Apartement"]
+        "enum": ["Detached", "Semi-detached", "Apartement"]
       },
-      "+building_volume": {
+      "+building-volume": {
         "type": "number"
       },
-      "+building_max_height_allowed": {
+      "+building-max-height-allowed": {
         "type": ["number", "null"]
       },
-      "+building_has_elevator": {
-        "type": "string",
-        "enum": ["yes", "no", "unknown"]
+      "+building-has-elevator": {
+        "type": ["string", "null"],
+        "enum": ["yes", "no", null]
       },
-      "+roof_area": {
+      "+building-heritage-status": {
+        "type": ["string", "null"]
+      },
+      "+building-monument-status": {
+        "type": ["boolean", "null"]
+      },
+      "+roof-area": {
         "type": "number"
       },
-      "+roof_elevation": {
+      "+roof-elevation": {
         "type": "number"
       },
-      "+year_construction": {
+      "+year-construction": {
         "type": "integer"
+      },
+      "+colours": {
+        "type": "object",
+        "properties": {
+          "social": {
+            "type": ["number", "null"],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "water": {
+            "type": ["number", "null"],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "green": {
+            "type": ["number", "null"],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "energy": {
+            "type": ["number", "null"],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "densification": {
+            "type": ["number", "null"],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "utilities": {
+            "type": ["number", "null"],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "mobility": {
+            "type": ["number", "null"],
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "social, water, green, energy, densification, utilities, mobility"
+        ],
+        "additionalProperties": false
       }
     }
   },
