@@ -10,16 +10,6 @@
       "+building-function": {
         "type": "string"
       },
-      "+building-type": {
-        "type": "string",
-        "enum": ["Detached", "Semi-detached", "Apartement"]
-      },
-      "+building-volume": {
-        "type": "number"
-      },
-      "+building-max-height-allowed": {
-        "type": ["number", "null"]
-      },
       "+building-has-elevator": {
         "type": ["string", "null"],
         "enum": ["yes", "no", null]
@@ -27,16 +17,20 @@
       "+building-heritage-status": {
         "type": ["string", "null"]
       },
+      "+building-max-height-allowed": {
+        "type": ["number", "null"]
+      },
       "+building-monument-status": {
         "type": ["boolean", "null"]
       },
-      "+roof-area": {
+      "+building-type": {
+        "type": "string",
+        "enum": ["Detached", "Semi-detached", "Apartement"]
+      },
+      "+building-volume": {
         "type": "number"
       },
-      "+roof-elevation": {
-        "type": "number"
-      },
-      "+year-construction": {
+      "+building-year-construction": {
         "type": "integer"
       },
       "+colours": {
@@ -82,6 +76,27 @@
           "social, water, green, energy, densification, utilities, mobility"
         ],
         "additionalProperties": false
+      },
+      "+roof-area": {
+        "type": "number"
+      },
+      "+roof-compactness": {
+        "type": "number"
+      },
+      "+roof-elevation": {
+        "type": "number"
+      },
+      "+roof-good-solar": {
+        "type": "boolean"
+      },
+      "+roof-irradiance": {
+        "type": "number"
+      },
+      "+roof-slope": {
+        "type": "number"
+      },
+      "+roof-sun-hours": {
+        "type": "number"
       }
     }
   },
