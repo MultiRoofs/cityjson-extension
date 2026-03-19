@@ -25,7 +25,7 @@
       },
       "+building-type": {
         "type": "string",
-        "enum": ["Detached", "Semi-detached", "Apartement"]
+        "enum": ["Detached", "Semi-detached", "Apartement", "null"]
       },
       "+building-volume": {
         "type": "number"
@@ -73,30 +73,36 @@
           }
         },
         "required": [
-          "social, water, green, energy, densification, utilities, mobility"
+          "social",
+          "water",
+          "green",
+          "energy",
+          "densification",
+          "utilities",
+          "mobility"
         ],
         "additionalProperties": false
       },
       "+roof-area": {
-        "type": "number"
+        "type": ["number", "null"]
       },
       "+roof-compactness": {
-        "type": "number"
+        "type": ["number", "null"]
       },
       "+roof-elevation": {
-        "type": "number"
+        "type": ["number", "null"]
       },
       "+roof-good-solar": {
-        "type": "boolean"
+        "type": ["boolean", "null"]
       },
       "+roof-irradiance": {
-        "type": "number"
+        "type": ["number", "null"]
       },
       "+roof-slope": {
-        "type": "number"
+        "type": ["number", "null"]
       },
       "+roof-sun-hours": {
-        "type": "number"
+        "type": ["number", "null"]
       }
     }
   },
