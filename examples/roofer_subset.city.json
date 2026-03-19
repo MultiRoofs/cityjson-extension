@@ -3,14 +3,15 @@
   "version": "2.0",
   "extensions": {
     "multiroofs": {
-      "url": "https://raw.githubusercontent.com/MultiRoofs/cityjson-extension/refs/heads/main/multiroofs.ext.json"
+      "url": "https://raw.githubusercontent.com/MultiRoofs/cityjson-extension/refs/heads/main/multiroofs.ext.json",
+      "version": "0.1.0"
     }
   },
   "CityObjects": {
     "41": {
       "type": "Building",
       "attributes": {
-        "+building_type": "Residential",
+        "+building-type": "Detached",
         "aantal_verblijfsobjecten": 2,
         "bouwjaar": 1920.0,
         "gebruiksdoel": "woonfunctie",
@@ -422,6 +423,6 @@
     "geographicalExtent": [
       85363.405, 447108.461, -0.379, 85401.197, 447138.997, 10.938
     ],
-    "referenceSystem": "https://www.opengis.net/def/crs/EPSG/0/28992"
+    "referenceSystem": "https://www.opengis.net/def/crs/EPSG/0/7415"
   }
 }
