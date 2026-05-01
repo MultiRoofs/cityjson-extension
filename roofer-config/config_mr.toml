@@ -1,0 +1,81 @@
+
+## Path to roofprint polygons source. Can be an OGR supported file (eg. GPKG) or database connection string.
+polygon-source = "wippolder.gpkg"
+## Output directory. The building models will be written to a CityJSONSequence file in this directory.
+output-directory = "output/"
+
+
+### Input options
+## Building ID attribute to be used as identifier in the dataset
+id-attribute = "fid"
+## Manually set or override Spatial Reference System for input data.
+srs = "EPSG:7415"
+
+
+### Reconstruction options
+lod22 = true
+## Complexity factor for building model geometry. A number between 0.0 and 1.0. Higher values lead to more detailed building models, lower values to simpler models.
+complexity-factor = 0.888
+
+
+### Output options
+## Omit metadata line in CityJSONSequence output.
+omit-metadata = false
+## Scaling applied to CityJSON output vertices
+cj-scale = [0.001,0.001,0.001]
+## Rename output attributes. If no value is provided, the attribute will not be written. See the list of available attributes with `--attributes`. By default attribute names are prefixed with `rf_`.
+
+[output-attributes]
+## The slope of a roofpart in degrees
+slope = "+roof-gradient"
+## The azimuth of a roofpart in degrees
+azimuth = "+roof-azimuth"
+## The volume in cubic meters of the LoD 2.2 geometry
+volume_lod22 = "+building-volume"
+## The 98th percentile elevation of the building pointcloud
+h_pc_98p = "+roof-elevation"
+## The elevation of the floor of the building
+h_ground = "+ground-elevation"
+## The 50th percentile roof elevation
+# h_roof_50p = "rf_h_roof_50p"
+## The 70th percentile roof elevation
+# h_roof_70p = "rf_h_roof_70p"
+## The maximum roof elevation
+# h_roof_max = "rf_h_roof_max"
+## The minimum roof elevation
+# h_roof_min = "rf_h_roof_min"
+## The main ridge elevation
+# h_roof_ridge = "rf_h_roof_ridge"
+## Indicates if a glass roof was detected
+is_glass_roof = "rf_is_glass_roof"
+# nodata_frac = "rf_nodata_frac"
+## Indicates if the pointcloud was found to be insufficient for reconstruction
+# pointcloud_unusable = "rf_pointcloud_unusable"
+## Indicates the point density inside the roofprint
+pt_density = "rf_pt_density"
+## The Root Mean Square Erorr of the LOD22 geometry
+rmse_lod22 = "rf_rmse_lod22"
+## The number of roofplanes detected in the pointcloud (could be different from the generated mesh model)
+roof_n_planes = "rf_roof_planes"
+## Roof type. Can be `no points`, `no planes`, `horizontal`, `multiple horizontal`, or `slanted`
+roof_type = "rf_roof_type"
+## Lists val3dity codes for LoD 2.2 geometry
+val3dity_lod22 = "rf_val3dity_lod22"
+
+[[pointclouds]]
+## Name of the pointcloud
+name = "wippolder"
+## Path to the pointcloud
+source = ["wippolder.las"]
+## Ground class
+ground_class = 2
+## building class
+building_class = 6
+# ## Quality
+# quality = 0
+# ## Date
+# date = 0
+# ## Force LoD11
+# force_lod11 = false
+# ## Select only for date
+# select_only_for_date = false
