@@ -98,10 +98,16 @@
       "+roof-irradiance": {
         "type": ["number", "null"]
       },
-      "+roof-slope": {
+      "+roof-azimuth": {
+        "type": ["number", "null"]
+      },
+      "+roof-gradient": {
         "type": ["number", "null"]
       },
       "+roof-sun-hours": {
+        "type": ["number", "null"]
+      },
+      "+ground-elevation": {
         "type": ["number", "null"]
       }
     }
