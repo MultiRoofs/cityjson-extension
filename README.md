@@ -4,7 +4,7 @@
 ## Computed from the 3D geometries
 |                                | **who?** | **mandatory?**  |  **units**       | **name**         | **extra info**                      |
 |:------------------------------ |:--------:|:---------------:|:----------------:|:----------------|:-----------------------------------|
-| **Roof area**                  | tudelft  | yes             | m^2              | roof-area        | total of all RoofSurfaces |
+| **Roof total area**            | tudelft  | yes             | m^2              | roof-total-area  | total of all RoofSurfaces |
 | **Roof elevation**             | tudelft  | yes             | m                | roof-elevation   | which point do we use?    |
 | **Roof compactness**           | tudelft  | yes             | (no units)       | roof-compactness | what formula? |
 | **Roof slope**                 | tudelft  | yes             | degree           | roof-slope       | for each roof segment? or steepest? |
