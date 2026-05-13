@@ -19,19 +19,21 @@
 
 |                                     | **who?** | **mandatory?** | **units**   | **name**                    | **extra info** |
 |:----------------------------------- |:--------:|:--------------:|:-----------:|:--------------------------- |:-------------- |
-| **Building year of construction**   | each LA  | yes            | none        | building-year-construction  | |
+| **Building year of construction**   | each LA  | yes            | none        | building-year-construction  |years or construction era (MR-classification?|
 | **Building foundation**             | each LA  | yes            | none        | building-foundation         | |
-| **Building type**                   | each LA  | yes            | enum        | building-type               | which classification we use? MVRDV:Needs collective review |
-| **Building function**               | each LA  | yes            | enum        | building-function           | which classification we use? MVRDV:Needs collective review|
+| **Building type**                   | each LA  | yes            | enum        | building-type               | MR-classification D1.2.3 - 4.2|
+| **Building function**               | each LA  | yes            | enum        | building-function           | MR-classification D1.2.3 - 4.2-usage|
 | **Elevator presence**               | each LA  | no             | boolean     | building-has-elevator       | |
 | **Rooftop mass**                    | each LA  | no             | kg?         | roof-mass                   | what is that? |
-| **Building energy label**           | each LA  | MVRDV:no       |             | building-energy-label       | |
-| **Building heritage status**        | each LA  | MVRDV:no       |             | building-heritage           | |
+| **Building energy label**           | each LA  | no             |             | building-energy-label       | |
+| **Building heritage status**        | each LA  | yes (right?    |             | building-heritage           |=sort of the same as heritage?|
 | **Building monument status**        | each LA  | yes            | boolean     | building-monument           | |
-| **Building ownership**              | each LA  | MVRDV:no       |             | building-ownership          | |
-| **Maximum building height allowed** | each LA  | MVRDV:no       | meter       | building-max-height         | | 
-| **Roof visibility**                 | each LA  | MVRDV:no       |             |                             | MVRDV:supposed to measure how visible a roof is from the ground. never implemented|
-| **Roof view quality**               | each LA  | MVRDV:yes      | MVRDV:degree| MVRDV:building-views        | MVRDV:internally generated from 3d model. measures number of unobstructed views from center of roof |
+| **Building ownership**              | each LA  | no             |             | building-ownership          |MR-classification D1.2.3 - 5|
+| **Maximum building height allowed** | each LA  | no             | meter       | building-max-height         |maybe use amount of extra levels? |
+| **Roof visibility**                 | each LA  | no             |             |                             | |
+| **Roof view quality**               | each LA  | yes            |             |                             | |
+| **Urban district type**             | each LA  | no             | degree      |                             |MR-classification D1.2.3 - 6|
+
 
 
 
