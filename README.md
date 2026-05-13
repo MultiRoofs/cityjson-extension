@@ -19,19 +19,21 @@
 
 |                                     | **who?** | **mandatory?** | **units**   | **name**                    | **extra info** |
 |:----------------------------------- |:--------:|:--------------:|:-----------:|:--------------------------- |:-------------- |
-| **Building year of construction**   | each LA  | yes            | none        | building-year-construction  | |
+| **Building year of construction**   | each LA  | yes            | none        | building-year-construction  |years or construction era (MR-classification?|
 | **Building foundation**             | each LA  | yes            | none        | building-foundation         | |
-| **Building type**                   | each LA  | yes            | enum        | building-type               | which classification we use? |
-| **Building function**               | each LA  | yes            | enum        | building-function           | which classification we use? |
+| **Building type**                   | each LA  | yes            | enum        | building-type               | MR-classification D1.2.3 - 4.2|
+| **Building function**               | each LA  | yes            | enum        | building-function           | MR-classification D1.2.3 - 4.2-usage|
 | **Elevator presence**               | each LA  | no             | boolean     | building-has-elevator       | |
 | **Rooftop mass**                    | each LA  | no             | kg?         | roof-mass                   | what is that? |
 | **Building energy label**           | each LA  |                |             | building-energy-label       | |
-| **Building heritage status**        | each LA  |                |             | building-heritage           | |
+| **Building heritage status**        | each LA  |                |             | building-heritage           |=sort of the same as heritage?|
 | **Building monument status**        | each LA  | yes            | boolean     | building-monument           | |
-| **Building ownership**              | each LA  |                |             | building-ownership          | |
-| **Maximum building height allowed** | each LA  |                | meter       | building-max-height         | | 
+| **Building ownership**              | each LA  |                |             | building-ownership          |MR-classification D1.2.3 - 5|
+| **Maximum building height allowed** | each LA  |                | meter       | building-max-height         |maybe use amount of extra levels? |
 | **Roof visibility**                 | each LA  |                |             |                             | |
 | **Roof view quality**               | each LA  |                |             |                             | |
+| **Urban district type**             | each LA  | no             |             |                             |MR-classification D1.2.3 - 6|
+
 
 
 
