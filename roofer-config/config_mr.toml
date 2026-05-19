@@ -27,19 +27,19 @@ cj-scale = [0.001,0.001,0.001]
 
 [output-attributes]
 ## The slope of a roofpart in degrees
-slope = "+roof-gradient"
+slope = "roof-gradient"
 ## The azimuth of a roofpart in degrees
-azimuth = "+roof-azimuth"
+azimuth = "roof-azimuth"
 ## The volume in cubic meters of the LoD 2.2 geometry
 volume_lod22 = "+building-volume"
 ## The 98th percentile elevation of the building pointcloud
-h_pc_98p = "+roof-elevation"
+# h_pc_70p = "+roof-elevation"
 ## The elevation of the floor of the building
 h_ground = "+ground-elevation"
 ## The 50th percentile roof elevation
 # h_roof_50p = "rf_h_roof_50p"
-## The 70th percentile roof elevation
-# h_roof_70p = "rf_h_roof_70p"
+# The 70th percentile roof elevation
+h_roof_70p = "+roof-elevation"
 ## The maximum roof elevation
 # h_roof_max = "rf_h_roof_max"
 ## The minimum roof elevation
