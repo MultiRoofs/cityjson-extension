@@ -28,7 +28,7 @@
         "enum": ["Detached", "Semi-detached", "Apartement", "null"]
       },
       "+building-volume": {
-        "type": "number"
+        "type": ["number", "null"]
       },
       "+building-year-construction": {
         "type": ["integer", "null"]
