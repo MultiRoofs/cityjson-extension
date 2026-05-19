@@ -31,7 +31,7 @@
         "type": "number"
       },
       "+building-year-construction": {
-        "type": "integer"
+        "type": ["integer", "null"]
       },
       "+colours": {
         "type": "object",
@@ -83,7 +83,7 @@
         ],
         "additionalProperties": false
       },
-      "+roof-area": {
+      "+roof-total-area": {
         "type": ["number", "null"]
       },
       "+roof-compactness": {
@@ -96,12 +96,6 @@
         "type": ["boolean", "null"]
       },
       "+roof-irradiance": {
-        "type": ["number", "null"]
-      },
-      "+roof-azimuth": {
-        "type": ["number", "null"]
-      },
-      "+roof-gradient": {
         "type": ["number", "null"]
       },
       "+roof-sun-hours": {
