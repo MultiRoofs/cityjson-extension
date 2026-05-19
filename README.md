@@ -2,37 +2,36 @@
 
 
 ## Computed from the 3D geometries
-|                                | **who?** | **mandatory?**  |  **units**       | **name**          | **extra info**                      |
-|:------------------------------ |:--------:|:---------------:|:----------------:|:-----------------|:-----------------------------------|
-| **Roof total area**            | tudelft  | yes             | m^2              | roof-total-area   | total of all RoofSurfaces |
-| **Roof elevation**             | tudelft  | yes             | m                | roof-elevation    | which point do we use? MVRDV:Average Z-value of all vertices   |
-| **Roof compactness**           | tudelft  | yes             | (no units)       | roof-compactness  | what formula? MVRDV:Rooftop_Area / Rooftop_Perimeter-Length |
-| **Roof slope**                 | tudelft  | yes             | degree           | roof-slope        | for each roof segment? or steepest? MVRDV:We used to calc for each segment, since we stored each segment as sub-roof |
-| **Building mass** (volume)     | tudelft  | yes             | m^3              | building-volume   |  |
-| **Roof sun hours**             | mvrdv    | yes             | hours            | roof-sun-hours    | hours/day in what month?! MVRDV:Full day, 21st March |
-| **Roof solar irradiance**      | mvrdv    | yes             | kWh/m2           | roof-irradiance   | MVRDV:Calculated for entire year |
-| **Good / Bad solar**           | mvrdv    | yes             | boolean          | roof-good-solar   | what the f is that? MVRDV:Boolean to speed up calculations. Threshold unclear |
-| ~~**Roof visibility**~~        | mvrdv    | no              |                  | roof-visibility   | supposed to measure how visible a roof is from the ground. **never implemented** |
-| **Roof view quality**          | mvrdv    | yes             | degree           | roof-view-quality | internally generated from 3d model. measures number of unobstructed views from center of roof                           |
+| |                                | **who?** | **mandatory?**  |  **units**       | **name**          | **extra info**                    |
+|-|:------------------------------ |:--------:|:---------------:|:----------------:|:-----------------|:-----------------------------------|
+| | **Roof total area**            | tudelft  | yes             | m^2              | roof-total-area   | total of all RoofSurfaces |
+| | **Roof elevation**             | tudelft  | yes             | m                | roof-elevation    | which point do we use? median or 70-percentile|
+| | **Roof compactness**           | tudelft  | yes             | (no units)       | roof-compactness  | (rooftop-total-area / rooftop-perimeter) |
+| | **Roof slope**                 | tudelft  | yes             | degree           | roof-slope        | for each roof segment |
+| | **Building mass** (volume)     | tudelft  | yes             | m^3              | building-volume   |  |
+| | **Roof sun hours**             | mvrdv    | yes             | hours            | roof-sun-hours    | Full day, 21st March |
+| | **Roof solar irradiance**      | mvrdv    | yes             | kWh/m2           | roof-irradiance   | Calculated for entire year |
+|x| **Good / Bad solar**           | mvrdv    | yes             | boolean          | roof-good-solar   | MVRDV: Boolean to speed up calculations. Threshold unclear |
+|x| ~~**Roof visibility**~~        | mvrdv    | no              |                  | roof-visibility   | supposed to measure how visible a roof is from the ground. **never implemented** |
+|x| **Roof view quality**          | mvrdv    | yes             | degree           | roof-view-quality | internally generated from 3d model. measures number of unobstructed views from center of roof |
 
 
 
 ## Provided by the LAs for each building
 
-|                                     | **who?** | **mandatory?** | **units**   | **name**                    | **extra info** |
-|:----------------------------------- |:--------:|:--------------:|:-----------:|:--------------------------- |:-------------- |
-| **Building year of construction**   | each LA  | yes            | none        | building-year-construction  | years or construction era (MR-classification?|
-| **Building foundation**             | each LA  | yes            | none        | building-foundation         | |
-| **Building type**                   | each LA  | yes            | enum        | building-type               | MR-classification D1.2.3 - 4.2|
-| **Building function**               | each LA  | yes            | enum        | building-function           | MR-classification D1.2.3 - 4.2-usage|
-| **Elevator presence**               | each LA  | no             | boolean     | building-has-elevator       | |
-| **Rooftop mass**                    | each LA  | no             | kg?         | roof-mass                   | what is that? |
-| **Building energy label**           | each LA  | no             |             | building-energy-label       | |
-| **Building heritage status**        | each LA  | yes (right?)   |             | building-heritage           | =sort of the same as heritage?|
-| **Building monument status**        | each LA  | yes            | boolean     | building-monument           | |
-| **Building ownership**              | each LA  | no             |             | building-ownership          | MR-classification D1.2.3 - 5|
-| **Maximum building height allowed** | each LA  | no             | meter       | building-max-height         | maybe use amount of extra levels? |
-| **Urban district type**             | each LA  | no             | degree      |                             | MR-classification D1.2.3 - 6|
+| |                                     | **who?** | **mandatory?** | **units**   | **name**                    | **extra info** |
+|-|:----------------------------------- |:--------:|:--------------:|:-----------:|:--------------------------- |:-------------- |
+| | **Building energy label**           | each LA  | no             |             | building-energy-label       | |
+|x| **Building foundation**             | each LA  | yes            | none        | building-foundation         | |
+| | **Building function**               | each LA  | yes            | enum        | building-function           | MR-classification D1.2.3 - 4.2-usage|
+|x| **Building heritage status**        | each LA  | **yes (right?)**|            | building-heritage           | =sort of the same as zone-heritage? |
+| | **Building monument status**        | each LA  | yes            | boolean     | building-monument           | |
+| | **Building ownership**              | each LA  | no             |             | building-ownership          | MR-classification D1.2.3 - 5|
+| | **Building type**                   | each LA  | yes            | enum        | building-type               | MR-classification D1.2.3 - 4.2|
+|x| **Building year of construction**   | each LA  | yes            | none        | building-year-construction  | years of construction era (MR-classification?) |
+| | **Elevator presence**               | each LA  | no             | boolean     | building-has-elevator       | |
+|x| **Maximum building height allowed** | each LA  | no             | meter       | building-max-height         | maybe use amount of extra levels? |
+|x| **Rooftop mass**                    | each LA  | no             | kg          | roof-mass                   | what is that? |
 
 
 
@@ -41,8 +40,9 @@
 
 |                                       | **who?** | **mandatory?** | **units** | **name**               | **extra info** | 
 |:------------------------------------- |:--------:|:--------------:|:---------:|:----------------------:|:--------------:|
-| **Zone heritage monumenten**          | each LA  |  MVRDV:No      | MVRDV:bool|                        | |             
-| **Zone noise disturbance**            | each LA  |  MVRDV:No      | dB        |                        | |             
+| **Urban district type**               | each LA  | no             | ?         |                        | MR-classification D1.2.3 - 6|
+| **Zone heritage monument**            | each LA  | no             | boolean   | zone-heritage          | |             
+| **Zone noise disturbance**            | each LA  | no             | dB        | zone-noise             | max dB allowed? |             
 
 
 ## Stuff that should be cleaned:
