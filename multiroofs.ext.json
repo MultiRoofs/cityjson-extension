@@ -8,11 +8,17 @@
   "extraAttributes": {
     "Building": {
       "+building-function": {
-        "type": "string"
+        "type": ["string", "null"],
+        "enum": [
+          "commercial",
+          "industrial",
+          "office",
+          "public",
+          "residential"
+        ]
       },
       "+building-has-elevator": {
-        "type": ["string", "null"],
-        "enum": ["yes", "no", null]
+        "type": ["boolean", "null"]
       },
       "+building-heritage-status": {
         "type": ["string", "null"]
@@ -23,9 +29,27 @@
       "+building-monument-status": {
         "type": ["boolean", "null"]
       },
+      "+building-ownership": {
+        "type": ["string", "null"],
+        "enum": [
+          "private individual homeowner", 
+          "landlord", 
+          "homeowner association", 
+          "housing corporation", 
+          "municipal real estate owner", 
+          "corporate real estate owner", 
+          "industrial property owner",
+          "private project developers",
+          "institutional investor",
+          "religious institution"]
+      },
       "+building-type": {
-        "type": "string",
-        "enum": ["Detached", "Semi-detached", "Apartement", "null"]
+        "type": ["string", "null"],
+        "enum": [
+          "detached",
+          "semi-detached",
+          "terraced",
+          "apartment"]
       },
       "+building-volume": {
         "type": ["number", "null"]

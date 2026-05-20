@@ -26,11 +26,11 @@
 |-|:----------------------------------- |:--------:|:--------------:|:-----------:|:--------------------------- |:-------------- |
 | | **Building energy label**           | each LA  | no             |             | building-energy-label       | |
 |x| **Building foundation**             | each LA  | yes            | none        | building-foundation         | |
-| | **Building function**               | each LA  | yes            | enum        | building-function           | MR-classification D1.2.3 - 4.2-usage|
+| | **Building function**               | each LA  | yes            | enum        | building-function           | MR-D1.2.3-4.2-usage|
 |x| **Building heritage status**        | each LA  | **yes (right?)**|            | building-heritage           | =sort of the same as zone-heritage? |
 | | **Building monument status**        | each LA  | yes            | boolean     | building-monument           | |
-| | **Building ownership**              | each LA  | no             |             | building-ownership          | MR-classification D1.2.3 - 5|
-| | **Building type**                   | each LA  | yes            | enum        | building-type               | MR-classification D1.2.3 - 4.2|
+| | **Building ownership**              | each LA  | no             |             | building-ownership          | MR-D1.2.3-5|
+| | **Building type**                   | each LA  | yes            | enum        | building-type               | MR-D1.2.3-4.2 |
 |x| **Building year of construction**   | each LA  | yes            | none        | building-year-construction  | years of construction era (MR-classification?) |
 | | **Elevator presence**               | each LA  | no             | boolean     | building-has-elevator       | |
 |x| **Maximum building height allowed** | each LA  | no             | meter       | building-max-height         | maybe use amount of extra levels? |
