@@ -3,13 +3,13 @@
 
 ## Computed from the 3D geometries
 | |                                | **who?** | **mandatory?**  |  **units**       | **name**          | **extra info**                    |
-|-|:------------------------------ |:--------:|:---------------:|:----------------:|:-----------------|:-----------------------------------|
+|-|:------------------------------ |:--------:|:---------------:|:----------------:|:------------------|:----------------------------------|
 | | **Roof total area**            | tudelft  | yes             | m^2              | roof-total-area   | total of all RoofSurfaces |
 | | **Roof elevation**             | tudelft  | yes             | m                | roof-elevation    | which point do we use? median or 70-percentile|
 | | **Roof compactness**           | tudelft  | yes             | (no units)       | roof-compactness  | (rooftop-total-area / rooftop-perimeter) |
 |x| ~~**Roof slope**~~             | tudelft  | yes             | degree           | roof-slope        | for each roof segment ==> will be stored with each RoofSurface (roof-gradient + roof-azimuth) |
-| | **Roof gradient**                | tudelft  | yes             | degree           | roof-gradient     | for each roof segment  |
-| | **Roof azimuth**                 | tudelft  | yes             | degree           | roof-azimuth      | for each roof segment, from North CW  |
+| | **Roof gradient**              | tudelft  | yes             | degree           | roof-gradient     | for each roof segment  |
+| | **Roof azimuth**               | tudelft  | yes             | degree           | roof-azimuth      | for each roof segment, from North CW  |
 | | **Building mass** (volume)     | tudelft  | yes             | m^3              | building-volume   |  |
 | | **Roof sun hours**             | mvrdv    | yes             | hours            | roof-sun-hours    | Full day, 21st March |
 | | **Roof solar irradiance**      | mvrdv    | yes             | kWh/m2           | roof-irradiance   | Calculated for entire year |
@@ -25,7 +25,7 @@
 | |                                     | **who?** | **mandatory?** | **units**   | **name**                    | **extra info** |
 |-|:----------------------------------- |:--------:|:--------------:|:-----------:|:--------------------------- |:-------------- |
 | | **Building energy label**           | each LA  | no             |             | building-energy-label       | |
-|x| **Building foundation**             | each LA  | yes            | none        | building-foundation         | |
+|x| **Building foundation**             | each LA  | yes            | none        | building-foundation         | what is that?  |
 | | **Building function**               | each LA  | yes            | enum        | building-function           | MR-D1.2.3-4.2-usage|
 |x| **Building heritage status**        | each LA  | **yes (right?)**|            | building-heritage           | =sort of the same as zone-heritage? |
 | | **Building monument status**        | each LA  | yes            | boolean     | building-monument           | |
