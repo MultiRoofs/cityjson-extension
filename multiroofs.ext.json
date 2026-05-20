@@ -2,7 +2,7 @@
   "type": "CityJSONExtension",
   "name": "multiroofs",
   "uri": "https://multiroofs.be/myextension.json",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "versionCityJSON": "2.0",
   "description": "Attributes needed for the MultiRoofs project",
   "extraAttributes": {
