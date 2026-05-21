@@ -41,7 +41,8 @@
           "industrial property owner",
           "private project developers",
           "institutional investor",
-          "religious institution"]
+           "religious institution"
+        ]
       },
       "+building-type": {
         "type": ["string", "null"],
