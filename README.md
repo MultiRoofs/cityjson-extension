@@ -15,7 +15,7 @@
 | | **Roof solar irradiance**      | mvrdv    | yes             | kWh/m2           | roof-irradiance   | Calculated for entire year |
 |x| **Good / Bad solar**           | mvrdv    | yes             | boolean          | roof-good-solar   | MVRDV: Boolean to speed up calculations. Threshold unclear |
 |x| ~~**Roof visibility**~~        | mvrdv    | no              |                  | roof-visibility   | supposed to measure how visible a roof is from the ground. **never implemented** |
-|x| **Roof view quality**          | mvrdv    | yes             | degree           | roof-view-quality | internally generated from 3d model. measures number of unobstructed views from center of roof |
+|x| **Roof view quality**          | mvrdv    | yes             | degree           | roof-view-quality | internally generated from 3d model. measures number of unobstructed views from center of roof (SVF) |
 |x| **Ground elevation**           | tudelft  | yes             | m                | ground-elevation  | surely useful to know the height of the building (coordinates are wrt CRS, not the ground) |
 
 
