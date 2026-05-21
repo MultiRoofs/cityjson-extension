@@ -23,6 +23,14 @@ _(none currently — `+colours` is intentionally not documented in markdown tabl
 - Run: `roofer -c roofer-config/config_mr.toml`.
 - Usage: edit polygon-source, output-directory, and LAS source paths in the TOML before running.
 
+## Validation
+
+Validate a CityJSONSequence file with [cjval](https://github.com/cityjson/cjval):
+
+```
+cat examples/output_roofer_mr.city.jsonl | cjval
+```
+
 ## No build/test/lint tooling
 
 This is a spec-only repo — there are no tests, linters, or build steps.
