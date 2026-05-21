@@ -17,16 +17,19 @@
           "residential"
         ]
       },
+      "+building-height": {
+        "type": ["number", "null"]
+      },
       "+building-has-elevator": {
         "type": ["boolean", "null"]
-      },
-      "+building-heritage-status": {
-        "type": ["string", "null"]
       },
       "+building-max-height-allowed": {
         "type": ["number", "null"]
       },
-      "+building-monument-status": {
+      "+building-energy-label": {
+        "type": ["string", "null"]
+      },
+      "+building-monument": {
         "type": ["boolean", "null"]
       },
       "+building-ownership": {
@@ -118,13 +121,13 @@
       "+roof-elevation": {
         "type": ["number", "null"]
       },
-      "+roof-good-solar": {
-        "type": ["boolean", "null"]
-      },
       "+roof-irradiance": {
         "type": ["number", "null"]
       },
       "+roof-sun-hours": {
+        "type": ["number", "null"]
+      },
+      "+roof-view-quality": {
         "type": ["number", "null"]
       },
       "+ground-elevation": {
