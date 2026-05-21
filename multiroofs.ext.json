@@ -32,16 +32,16 @@
       "+building-ownership": {
         "type": ["string", "null"],
         "enum": [
-          "private individual homeowner", 
-          "landlord", 
+          "corporate real estate owner", 
           "homeowner association", 
           "housing corporation", 
-          "municipal real estate owner", 
-          "corporate real estate owner", 
           "industrial property owner",
-          "private project developers",
           "institutional investor",
-           "religious institution"
+          "landlord", 
+          "municipal real estate owner", 
+          "private individual homeowner", 
+          "private project developers",
+          "religious institution"
         ]
       },
       "+building-type": {
@@ -50,7 +50,8 @@
           "detached",
           "semi-detached",
           "terraced",
-          "apartment"]
+          "apartment"
+        ]
       },
       "+building-volume": {
         "type": ["number", "null"]
