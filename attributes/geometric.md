@@ -13,4 +13,4 @@
 | **Building mass** (volume)     | tudelft  | m^3              | building-volume   |  |
 | **Roof sun hours**             | mvrdv    | hours            | roof-sun-hours    | Full day, 21st March |
 | **Roof solar irradiance**      | mvrdv    | kWh/m2           | roof-irradiance   | Calculated for entire year |
-| **Roof view quality**          | mvrdv    | degree           | roof-view-quality | internally generated from 3d model. measures number of unobstructed views from center of roof (SVF) |
+| **Roof view quality**          | tudelft  | degree           | roof-view-quality | internally generated from 3d model. measures number of unobstructed views from center of roof (SVF) |
