@@ -25,7 +25,7 @@
 | **Urban district type**               | each LA  | no             | ?         |                        | MR-classification D1.2.3 - 6|
 | **Zone heritage monument**            | each LA  | no             | boolean   | zone-heritage          | |             
 | **Zone noise disturbance**            | each LA  | no             | dB        | zone-noise             | max dB allowed? |
-
-
-
+| **Zone flood risk-fluvial**           | each LA  | no             | ?         | zone-flooding-fluvial  | | 
+| **Zone flood risk-pluvial**           | each LA  | no             | ?         | zone-flooding-pluvial  | | 
+| **Zone heath stress**                 | each LA  | no             | ?         | zone-heath stress      | | 
 
