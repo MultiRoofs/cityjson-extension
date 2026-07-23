@@ -11,6 +11,6 @@
 | **Roof gradient**              | tudelft  | degree           | roof-gradient     | for each roof segment  |
 | **Roof azimuth**               | tudelft  | degree           | roof-azimuth      | for each roof segment, from North CW  |
 | **Building mass** (volume)     | tudelft  | m^3              | building-volume   |  |
-| **Roof sun hours**             | mvrdv    | hours            | roof-sun-hours    | Full day, 21st March |
-| **Roof solar irradiance**      | mvrdv    | kWh/m2           | roof-irradiance   | Calculated for entire year |
-| **Roof view quality**          | tudelft  | degree           | roof-view-quality | internally generated from 3d model. measures number of unobstructed views from center of roof (SVF) |
+| **Roof sun hours**             | tudelft  | hours            | roof-sun-hours    | Full day, 21st March |
+| **Roof solar irradiance**      | tudelft  | kWh/m2           | roof-irradiance   | Calculated for entire year |
+| **Roof view quality**          | tudelft  | degree           | roof-view-quality | Measures number of unobstructed views from center of roof (SVF thus) |
