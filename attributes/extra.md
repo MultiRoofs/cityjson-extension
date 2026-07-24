@@ -27,5 +27,5 @@
 | **Zone noise disturbance**            | each LA  | no             | dB        | zone-noise             | max dB allowed? |
 | **Zone flood risk-fluvial**           | each LA  | no             | ?         | zone-flooding-fluvial  | | 
 | **Zone flood risk-pluvial**           | each LA  | no             | ?         | zone-flooding-pluvial  | | 
-| **Zone heat stress**                  | each LA  | no             | ?         | zone-heath stress      | | 
+| **Zone heat stress**                  | each LA  | no             | ?         | zone-heat stress      | | 
 
